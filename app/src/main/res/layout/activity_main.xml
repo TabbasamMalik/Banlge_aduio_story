@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_rounded_bg"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+<!--    <Button-->
+<!--        android:id="@+id/feedback"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:background="@color/green"-->
+<!--        android:text="Feedback"-->
+
+<!--        android:textSize="6dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_height="35dp">-->
+
+<!--    </Button>-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:src="@drawable/logo_banglaaudiostories"
+        />
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/app_banner_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_below="@+id/logo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@color/grey"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_margin="@dimen/activity_vertical_margin"-->
+<!--        android:layout_height="match_parent">-->
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/grey"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"/>
+
+<!--    </RelativeLayout>-->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/app_banner_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:layout_marginLeft="@dimen/left_margin"
+    android:layout_marginRight="@dimen/right_margin"
+    android:background="@drawable/circular_bg"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_play_mirchi_all_audio"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

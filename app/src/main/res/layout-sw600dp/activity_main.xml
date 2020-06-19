@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/feedback"
+        android:layout_alignParentRight="true"
+        android:layout_width="35dp"
+        android:background="@color/green"
+        android:text="Feedback"
+        android:textSize="6dp"
+        android:textColor="@color/white"
+        android:layout_height="35dp">
+
+    </Button>
+    <RelativeLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/logo_banglaaudiostories"
+        >
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2869233122894894/6926918857">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/logo"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_marginTop="10dp"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/recyclerview"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-2869233122894894/6926918857">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
